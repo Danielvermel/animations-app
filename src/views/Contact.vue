@@ -34,7 +34,8 @@ export default {
     }
     const enter = (el, done) => {
       gsap.to(el, {
-        opacity: 0,
+        opacity: 1,
+        y: 0,
         duration: 0.8,
         onComplete: done,
         delay: el.dataset.index * 0.2 // it gets the data-index value 
